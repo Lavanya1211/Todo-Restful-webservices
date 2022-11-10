@@ -5,6 +5,7 @@
 ### Api Documentation
 
 1 . **To save the task**  
+
 `Post` `localhost:9090/todo/addtask`  
 
 `Requestbody` 
@@ -26,18 +27,10 @@
 ```
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-2 . **To list all tasks **
+2 .  **To list all tasks**
 
 `Get` `localhost:9090/todo/list`  
 
-`Requestbody` 
-```JSON
-{
-    "taskName": "Install Eclipse 1",
-    "taskEndDate": "2022-11-20",
-    "taskStatus": "Y"
-}
-```
 `Response` 
 ```JSON
 {
@@ -49,13 +42,14 @@
 ```
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-3. **To update a task **
+3. **To update a task**
 
 `Post` `localhost:9090/todo/updatetask`  
 
 `Requestbody` 
 ```JSON
-{
+{ 
+    "taskId": 4,
     "taskName": "Install Eclipse 1",
     "taskEndDate": "2022-11-20",
     "taskStatus": "Y"
@@ -72,18 +66,11 @@
 ```
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-4. **To delete a task  **
+4. **To delete a task**
 
-`Post` `localhost:9090/todo/deletetask/1`  
+`Post` `localhost:9090/todo/deletetask/4`  
+`PathVariable` - 4
 
-`Requestbody` 
-```JSON
-{
-    "taskName": "Install Eclipse 1",
-    "taskEndDate": "2022-11-20",
-    "taskStatus": "Y"
-}
-```
 `Response` 
 ```JSON
 {
