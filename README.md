@@ -33,12 +33,20 @@
 
 `Response` 
 ```JSON
-{
-    "taskId": 4,
-    "taskName": "Install Eclipse 1",
-    "taskEndDate": "2022-11-20",
-    "taskStatus": "Y"
-}
+[
+    {
+        "taskId": 1,
+        "taskName": "Install Eclipse",
+        "taskEndDate": "2022-05-11",
+        "taskStatus": "Pending"
+    },
+    {
+        "taskId": 2,
+        "taskName": "Install Eclipse 1",
+        "taskEndDate": "2022-11-20",
+        "taskStatus": "Y"
+    }
+]
 ```
 --------------------------------------------------------------------------------------------------------------------------------------------
 
